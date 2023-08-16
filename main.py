@@ -7,8 +7,8 @@ from bs4 import BeautifulSoup
 with open('Products_Liquisto_Published.csv', 'r') as csv_file:
     csv_reader = csv.DictReader(csv_file)
     for row in csv_reader:
-        vendor = row['vendor']
-        barcode = row['barcode']
+        vendor = row['Vendor']
+        barcode = row['Barcode (ISBN, UPC, GTIN, etc.)']
         
         # Combine vendor and barcode to create search query
         search_query = f"{vendor} {barcode}"
