@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 
 
 # Read CSV file
-with open('products.csv', 'r') as csv_file:
+with open('Products_Liquisto_Published.csv', 'r') as csv_file:
     csv_reader = csv.DictReader(csv_file)
     for row in csv_reader:
         vendor = row['vendor']
